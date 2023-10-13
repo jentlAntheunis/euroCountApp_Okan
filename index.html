@@ -10,23 +10,29 @@
     <script src="./js/script.js"></script>
 </head>
 <body>
-    <section class="c-options">
-        <div class="c-coins">
-            <img src="./assets/img/cent5.png" alt="5 cents coin">
-            <img src="./assets/img/cent10.png" alt="10 cents coin">
-            <img src="./assets/img/cent20.png" alt="20 cents coin">
-            <img src="./assets/img/cent50.png" alt="50 cents coin">
-            <img src="./assets/img/eur1.png" alt="1 euro coin">
-            <img src="./assets/img/eur2.png" alt="2 euro coin">
-        </div>
-        <div class="c-bills">
-            <img src="./assets/img/eur5.png" alt="5 euro bill">
-            <img src="./assets/img/eur10.png" alt="10 euro bill">
-            <img src="./assets/img/eur20.png" alt="20 euro bill">
-            <img src="./assets/img/eur50.png" alt="50 euro bill">
-            <img src="./assets/img/eur100.png" alt="100 euro bill">
-            <img src="./assets/img/eur200.png" alt="200 euro bill">
-        </div>
-    </section>
+    <div class="c-app">
+        <section class="c-options">
+            <div class="c-options__column c-coins">
+                <img src="./assets/img/cent5.png" alt="5 cents coin">
+                <img src="./assets/img/cent10.png" alt="10 cents coin">
+                <img src="./assets/img/cent20.png" alt="20 cents coin">
+                <img src="./assets/img/cent50.png" alt="50 cents coin">
+                <img src="./assets/img/eur1.png" alt="1 euro coin">
+                <img src="./assets/img/eur2.png" alt="2 euro coin">
+            </div>
+            <div class="c-options__column">
+                <img src="./assets/img/eur5.png" alt="5 euro bill">
+                <img src="./assets/img/eur10.png" alt="10 euro bill">
+                <img src="./assets/img/eur20.png" alt="20 euro bill">
+                <img src="./assets/img/eur50.png" alt="50 euro bill">
+                <img src="./assets/img/eur100.png" alt="100 euro bill">
+                <img src="./assets/img/eur200.png" alt="200 euro bill">
+            </div>
+        </section>
+        <section class="c-goal">
+            <p class="c-goal__text">€ <span class="js-goal-amount">25.65</span></p>
+            <div class="c-goal__field"></div>
+        </section>
+    </div>
 </body>
 </html>
