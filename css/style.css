@@ -8,6 +8,7 @@
 
 html {
     background-color: green;
+    font-family: sans-serif;
 }
 
 body {
@@ -56,23 +57,51 @@ body {
     flex-flow: column nowrap;
     width: 100%;
     height: 85vh;
-    
+    padding: 0 5rem;
+
+    & .c-goal__top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 5rem;
+    }
+
     & .c-goal__text {
         text-align: center;
         color: white;
-        font-family: sans-serif;
         font-size: 2rem;
         font-weight: 700;
-        margin-top: 0;
+        margin: 0;
     }
 
     & .c-goal__field {
         height: 100%;
+        position: relative;
 
-        margin: 0 5rem;
         border: 4px solid darkgreen;
         border-radius: 1rem;
+
+        & .c-goal__field__reset {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            margin: 0;
+        }
     }
+}
+
+.c-button {
+    background-color: gold;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .5);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.js-objects-container {
+    /* make mouse clicks go through */
+    pointer-events: none;
 }
 
 
