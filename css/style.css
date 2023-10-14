@@ -99,6 +99,18 @@ body {
     cursor: pointer;
 }
 
+
+.c-success__overlay {
+    position: absolute;
+    /* take up entire screen */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+}
+
 .js-objects-container {
     /* make mouse clicks go through */
     pointer-events: none;
