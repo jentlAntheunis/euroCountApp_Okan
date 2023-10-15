@@ -13,6 +13,7 @@ html {
 
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 /*---------------------------------------/*
@@ -103,12 +104,50 @@ body {
 .c-success__overlay {
     position: absolute;
     /* take up entire screen */
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    inset: 0;
+}
+
+.c-success__overlay--hidden {
+    pointer-events: none;
+}
+
+.c-success__symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: black;
+    opacity: 0.5;
+    height: 100%;
+
+    /* display above backdrop */
+    position: relative;
+    /* z-index: 1; */
+
+
+    transition: opacity 1s ease;
+}
+
+.c-success__overlay--hidden .c-success__symbol {
     opacity: 0;
+    pointer-events: none;
+}
+
+.c-success__svg__container {
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    transition: top 1s ease;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.c-success__overlay--hidden .c-success__svg__container {
+    top: 150%;
+}
+
+.c-success__svg {
+    fill: limegreen;
 }
 
 .js-objects-container {

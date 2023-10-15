@@ -66,6 +66,10 @@ const dragElement = (option) => {
 
 const winAnimation = () => {
     console.info('win animation');
+    document.querySelector('.js-overlay').classList.remove('c-success__overlay--hidden');
+    setTimeout(() => {
+        document.querySelector('.js-overlay').classList.add('c-success__overlay--hidden');
+    }, 2000);
 }
 
 const clearMoney = () => {
