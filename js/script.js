@@ -1,6 +1,6 @@
 let maxAmount = 100;
 
-let jsObjectsContainer; let htmlGoalField; let goalAmount;
+let jsObjectsContainer, htmlGoalField, goalAmount, jsSuccessGoal, jsSuccessCounter; 
 
 let total = 0;
 

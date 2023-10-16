@@ -60,7 +60,12 @@ body {
     height: 85vh;
     padding: 0 5rem;
 
-    & .c-goal__top {
+    .c-goal__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .c-goal__top__right {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -114,6 +119,25 @@ body {
     cursor: pointer;
 }
 
+.c-success-counter {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: .5rem;
+    display: absolute;
+    left: 0;
+
+    & .c-success-counter__svg {
+        max-height: 2rem;
+        max-width: 2rem;
+        fill: lime;
+    }
+
+    & .c-success-counter__text {
+        color: white;
+        font-weight: 600;
+    }
+}
 
 .c-success__overlay {
     position: absolute;
