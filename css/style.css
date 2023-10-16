@@ -57,10 +57,15 @@ body {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    height: 85vh;
+    height: 95%;
     padding: 0 5rem;
 
-    & .c-goal__top {
+    .c-goal__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .c-goal__top__right {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -92,12 +97,14 @@ body {
             & .c-button:first-child {
                 margin-left: 1rem;
                 padding: .5rem 2rem;
-            
+
             }
+
             & .c-goal__field__undo__svg {
                 max-height: 2rem;
                 max-width: 2rem;
             }
+
             & .c-button:last-child {
                 margin-right: 1rem;
             }
@@ -114,6 +121,25 @@ body {
     cursor: pointer;
 }
 
+.c-success-counter {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: .5rem;
+    display: absolute;
+    left: 0;
+
+    & .c-success-counter__svg {
+        max-height: 2rem;
+        max-width: 2rem;
+        fill: lime;
+    }
+
+    & .c-success-counter__text {
+        color: white;
+        font-weight: 600;
+    }
+}
 
 .c-success__overlay {
     position: absolute;
@@ -154,6 +180,14 @@ body {
     transition: top 1s ease;
     transform: translateY(-50%);
     top: 50%;
+
+    & p {
+        color: white;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 1;
+        text-align: center;
+    }
 }
 
 .c-success__overlay--hidden .c-success__svg__container {
