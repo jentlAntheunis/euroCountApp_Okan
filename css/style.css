@@ -57,7 +57,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    height: 85vh;
+    height: 95%;
     padding: 0 5rem;
 
     .c-goal__top {
@@ -97,12 +97,14 @@ body {
             & .c-button:first-child {
                 margin-left: 1rem;
                 padding: .5rem 2rem;
-            
+
             }
+
             & .c-goal__field__undo__svg {
                 max-height: 2rem;
                 max-width: 2rem;
             }
+
             & .c-button:last-child {
                 margin-right: 1rem;
             }
@@ -178,6 +180,14 @@ body {
     transition: top 1s ease;
     transform: translateY(-50%);
     top: 50%;
+
+    & p {
+        color: white;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 1;
+        text-align: center;
+    }
 }
 
 .c-success__overlay--hidden .c-success__svg__container {

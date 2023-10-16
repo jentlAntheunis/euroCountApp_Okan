@@ -83,9 +83,13 @@ const winAnimation = () => {
     document.querySelector('.js-overlay').classList.remove('c-success__overlay--hidden');
     successCounter++;
     htmlSuccessCounter.innerHTML = successCounter;
-    setTimeout(() => {
-        document.querySelector('.js-overlay').classList.add('c-success__overlay--hidden');
-    }, 2000);
+    if (successCounter < successAmountGoal) {
+        setTimeout(() => {
+            document.querySelector('.js-overlay').classList.add('c-success__overlay--hidden');
+        }, 2000);
+    } else {
+        document.querySelector('.js-success-content').innerHTML = '<p>Goed gedaan!</p>';
+    }
 }
 
 const clearMoney = () => {
